@@ -9,25 +9,25 @@
 </head>
 
 <body>
-    <div>
+    <nav>
         <p>Twój Oryginalny Prezent</p>
         <ul>
-            <li><a href="#">About us</a></li>
-            <li><a href="#">Skils</a></li>
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#abot">About us</a></li>
+            <li><a href="#skils">Skils</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
-    </div>
-    <section>
+    </nav>
+    <section id="about">
         <h1>About us</h1>
         <h2>We are</h2>
         <p>Lorem ipsum dolor sit amet.</p>
 
     </section>
-    <section>
+    <section id="skils">
         <h2>Skils</h2>
         <div class="skill">
-            <h2>Lorem</h2>
+            <h3>Lorem</h3>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos, aperiam.</p>
         </div>
         <div class="skill">
@@ -44,7 +44,7 @@
         </div>
     </section>
 
-    <section>
+    <section id="portfolio">
         <h2>portfolio</h2>
         <div class="portfolio-item">
             <img src="img/8.jpg" alt="">
@@ -57,15 +57,18 @@
         </div>
 
     </section>
-    <section>
+    <section id="contact">
         <h2>Contact</h2>
-        <h2>Formularz kontaktowy</h2>
+        <h2>Agnieszka Orłowska</h2>
+        <address>
+             <p>condratowicza 7</p>
+        </address>
 
         <form action="/action_page.php">
             <label for="fname">Imię:</label><br>
-            <input type="text" id="fname" name="fname"><br>
+            <input type="text" id="fname" name="fname" required><br>
             <label for="lname">Nazwisko:</label><br>
-            <input type="text" id="lname" name="lname"><br><br>
+            <input type="text" id="lname" name="lname" required><br><br>
             <input type="submit" value="Wyślij">
         </form>
     </section>
